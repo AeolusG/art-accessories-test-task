@@ -5,7 +5,7 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/art-accessories-test-task/',
+  base: '/art-accessories-test-task/dist',
   plugins: [vue()],
   resolve: {
     alias: {
