@@ -1,14 +1,28 @@
 # art-accessories-test-task
 
-This template should help get you started developing with Vue 3 in Vite.
+Тестовое задание от компании «Арт Аксессориз».
 
-## Recommended IDE Setup
+Задание:
+Задача реализовать таблицу на vue.js которая отображает 5 пользователей на страницу,с возможностью листать страницы, также перепрыгивать
+на страницу по номеру например 3.
+Время отображаеться в формате понятном для человека.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+Реализовать в таблице вымышленую колонку с действиями над пользователями ( действия реализовывать не нужно ), придумать действия самим.
 
-## Customize configuration
+Реализовать фильтр по имени.
+Реализовать сортировку по возрасту.
+Все данные храняться статично внутри data:{}
+Написать для конечного пользователя мануал по пользованию продуктом, если требуеться сборка описать шаги сборки.
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+Технологии:
+
+- Vue3 (Options API)
+- HTML
+- Sass
+
+# Превью таблицы
+
+![Иллюстрация к проекту](https://github.com/AeolusG/art-accessories-test-task/raw/main/assets/images/preview.png)
 
 ## Project Setup
 

@@ -2,20 +2,15 @@
   <div class="select">
     <slot name="image"></slot>
     <div class="choice">
-      <div class="chosen-item">{{ defaultOption }}</div>
+      <div class="chosen-item">{{ currentValue }}</div>
       <div class="options" v-if="isVisible">
-        <div
-          class="option"
-          @click="chooseOption(option.name), getValue(option.name)"
-          v-for="option in options"
-          :key="option.value"
-        >
+        <div class="option" @click="changeVisibility" v-for="option in options" :key="option.value">
           {{ option.name }}
         </div>
       </div>
     </div>
 
-    <button class="btn" @click="changeVisibility">
+    <button class="button" @click="changeVisibility">
       <img src="../assets/images/chevron_down.svg" />
     </button>
   </div>
@@ -27,35 +22,24 @@ export default {
     options: {
       type: Array,
       default: []
-    },
-    defaultOption: {
-      type: String,
-      default: null
     }
   },
   data() {
     return {
-      isVisible: false
+      isVisible: false,
+      currentValue: 'Выберите действие'
     }
   },
   methods: {
-    chooseOption(option) {
-      this.currentValue = option
-      this.isVisible = !this.isVisible
-    },
-
     changeVisibility() {
       this.isVisible = !this.isVisible
-    },
-    getValue(option) {
-      this.$emit('getValue', option)
     }
   }
 }
 </script>
 
 <style lang="scss" scoped>
-.btn {
+.button {
   border: none;
   background: none;
   cursor: grab;
@@ -72,7 +56,6 @@ export default {
 }
 .option {
   margin-bottom: 10px;
-  padding-left: 10px;
 }
 .option:hover {
   background-color: rgba(228, 228, 228, 1);
@@ -89,16 +72,18 @@ export default {
 }
 .select {
   display: flex;
+  justify-content: space-between;
+
+  display: flex;
   align-items: center;
 
-  margin-right: 40px;
-
-  font-family: 'DMSans', sans-serif;
   font-size: 15px;
   font-weight: 500;
-  color: rgba(41, 49, 72, 1);
+  color: rgb(41, 49, 72);
+
+  width: 200px;
+
   span {
-    font-family: 'DMSans', sans-serif;
     font-size: 15px;
     font-weight: 500;
     color: rgba(41, 49, 72, 1);
