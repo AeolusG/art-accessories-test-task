@@ -25,7 +25,7 @@
 - Vue3 (Options API)
 - HTML
 - Sass
-
+# Превью таблицы
 ![Иллюстрация к проекту](https://github.com/AeolusG/art-accessories-test-task/raw/main/src/assets/images/preview.png)
 
 # Ссылка на Netlify:
@@ -42,7 +42,7 @@ https://wondrous-seahorse-acbfad.netlify.app/
 - запустить проект в браузере командой "npm run dev"
 - если нужна сборка, запустить команду "npm run build", нужные файлы будут храниться в папке dist
 - если нужна проверка линтером, запустить команду "npm run lint"
-# Превью таблицы
+
 
 
 
