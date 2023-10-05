@@ -26,30 +26,23 @@
 - HTML
 - Sass
 
-# Превью таблицы
-
 ![Иллюстрация к проекту](https://github.com/AeolusG/art-accessories-test-task/raw/main/src/assets/images/preview.png)
 
-## Project Setup
+# Ссылка на Netlify:
+https://wondrous-seahorse-acbfad.netlify.app/
 
-```sh
-npm install
-```
+# Мануал по использованию:
+- Перейти по ссылке (https://wondrous-seahorse-acbfad.netlify.app/)
+- Кнопки "А-Я" и "0-9" сортируют соответствующие столбцы по алфавиту и возрасту (от самого молодого пользователя до самого возрастного)
+- В пятой колонке "действия" есть выпадающий список с действиями над конкретным пользователем, можно выбрать одно действие из трех.
 
-### Compile and Hot-Reload for Development
+# Мануал по установке и использованию проекта локально:
+- Склонировать репозиторий локально
+- установить зависимости командой "npm install"
+- запустить проект в браузере командой "npm run dev"
+- если нужна сборка, запустить команду "npm run build", нужные файлы будут храниться в папке dist
+- если нужна проверка линтером, запустить команду "npm run lint"
+# Превью таблицы
 
-```sh
-npm run dev
-```
 
-### Compile and Minify for Production
 
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
