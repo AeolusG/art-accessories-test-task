@@ -28,7 +28,7 @@
 
 # Превью таблицы
 
-![Иллюстрация к проекту](https://github.com/AeolusG/art-accessories-test-task/raw/main/assets/images/preview.png)
+![Иллюстрация к проекту](https://github.com/AeolusG/art-accessories-test-task/raw/main/src/assets/images/preview.png)
 
 ## Project Setup
 
